@@ -1,0 +1,10 @@
+     ## Implified Playbook:
+1. Develop a Flask API with required endpoints.
+2. Write a Dockerfile to package the Flask application as a Docker image.
+3. Use docker build to build the Docker image.
+4. Test the Docker image using docker run.
+5. Push the Docker image to Amazon ECR.
+6. Define the infrastructure using Terraform: a. Define a VPC. b. DEfine an ECS cluster. c. Define a task definition for the Flask API container. d. Define a service that will run the Flask API container. e. Define an Application Load Balancer (ALB) and listener rules to route traffic to the service.
+7. Deploy the Flask API using a Bash script: a. Authenticate with Amazon ECR. b. Build the Docker image using the Dockerfile. c. Tag the Docker image with a unique version number. d. Push the Docker image to Amazon ECR. e. Update the ECS service to use the new version of the Docker image. f. Run a health check on the API endpoint to ensure the new version is running.
+8. Monitor the Flask API using CloudWatch logs and metrics to ensure it is running correctly.
+
